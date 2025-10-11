@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kenjie Agbu | Coming Soon</title>
+  <style>
+    :root{
+      --bg1:#0f172a;
+      --accent:#ff5722;
+      --card:#0b1220;
+      --muted:rgba(255,255,255,0.75);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(1200px 600px at 10% 10%, #102132 0%, #071027 25%, #02040a 100%), linear-gradient(135deg,var(--bg1),#021024);
+      color: white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .wrap{
+      width:100%;
+      max-width:940px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:16px;
+      padding:28px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+      display:flex;
+      gap:24px;
+      align-items:center;
+    }
+    .left{
+      flex:1.1;
+      min-width:240px;
+    }
+    .right{
+      flex:1;
+      min-width:240px;
+    }
+    h1{margin:0;font-size:2.2rem;letter-spacing:-0.5px}
+    p.lead{color:var(--muted);margin-top:8px;margin-bottom:18px}
+    .nyan{
+      width:160px;
+      height:160px;
+      border-radius:12px;
+      overflow:hidden;
+      display:inline-block;
+      border:1px solid rgba(255,255,255,0.06);
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    }
+    .contact{
+      margin-top:16px;
+    }
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      background:var(--accent);
+      color:white;
+      box-shadow: 0 6px 18px rgba(255,87,34,0.12);
+    }
+    .services{
+      background:rgba(255,255,255,0.02);
+      padding:14px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .services h3{margin:0 0 10px 0;font-size:1.05rem}
+    .services ul{margin:0;padding-left:18px;color:var(--muted)}
+    .note{
+      margin-top:12px;
+      font-size:0.85rem;
+      color:#ffd8c6;
+      background:rgba(255,87,34,0.06);
+      padding:10px;
+      border-radius:8px;
+      border:1px solid rgba(255,87,34,0.06);
+    }
+    footer{margin-top:14px;font-size:0.85rem;color:rgba(255,255,255,0.6)}
+    @media(max-width:780px){
+      .wrap{flex-direction:column;align-items:stretch}
+      .nyan{width:120px;height:120px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main">
+    <section class="left">
+      <div style="display:flex;align-items:center;gap:16px">
+        <div class="nyan">
+          <!-- Nyan Cat GIF: replace 'nyanGifUrl' with your hosted gif if you want -->
+          <img src="https://media.giphy.com/media/sIIhZliB2McAo/giphy.gif" alt="Nyan Cat" style="width:100%;height:100%;object-fit:cover;display:block" />
+        </div>
+        <div>
+          <h1>Kenjie Agbu</h1>
+          <p class="lead">Website coming soon • Freelance services available</p>
+          <div class="contact">
+            <!-- Replace the href with your real Facebook profile or page -->
+            <a class="btn" href="https://www.facebook.com/kenjieagbu" target="_blank" rel="noopener noreferrer">Contact on Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px" class="services">
+        <h3>Services I Offer</h3>
+        <ul>
+          <li>Create professional excuse letters</li>
+          <li>Create resumes — for no experience &amp; experienced applicants</li>
+          <li>Image manipulation / basic photo editing</li>
+          <li>AI prompt generator (custom prompts for images &amp; writing)</li>
+          <li>Cybersecurity awareness &amp; legal, ethical guidance (learn how to protect accounts)</li>
+          <li>Account recovery guidance using official channels (help with steps to recover <em>your own</em> accounts)</li>
+        </ul>
+
+        <div class="note">
+          <strong>Important:</strong> I do <em>not</em> provide hacking instructions, tools to break into sites/accounts, or any illegal account takeovers. I can help with legal security training, prevention tips, and official recovery steps only.
+        </div>
+      </div>
+
+      <footer>© <span id="year"></span> Kenjie Agbu | Built with GitHub Pages</footer>
+    </section>
+
+    <aside class="right" aria-label="About & quick links">
+      <div style="background:rgba(255,255,255,0.015);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)">
+        <h3>Quick Info</h3>
+        <p style="color:var(--muted);margin:8px 0 0 0">Available for freelance work. Message me on Facebook for quotes and sample work.</p>
+        <div style="margin-top:12px">
+          <a href="https://www.facebook.com/kenjieagbu" target="_blank" class="btn" style="background:transparent;color:var(--accent);border:1px solid rgba(255,87,34,0.12)">Message on FB</a>
+        </div>
+      </div>
+
+      <div style="margin-top:14px;background:rgba(255,255,255,0.015);padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)">
+        <h3>How to book</h3>
+        <ol style="color:var(--muted);padding-left:18px;margin:8px 0 0 0">
+          <li>Send a message on my Facebook page.</li>
+          <li>Describe the service you want and share any files (for images/resume).</li>
+          <li>I will reply with a price &amp; delivery time — then we'll proceed.</li>
+        </ol>
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
